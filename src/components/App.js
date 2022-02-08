@@ -1,20 +1,11 @@
 import React, { useState } from "react";
 import AppRouter from "./AppRouter";
 
-// export default function App() {
-//   return (
-//     <div>
-//       <Routes>
-//         <Route path="/Mytest" element={<MyTest />} />
-//       </Routes>
-//     </div>
-//   );
-// }
-
 function App() {
   const [init, setInit] = useState(true);
   return <>{init ? <AppRouter /> : "Initializing.."}</>;
 }
+
 export default App;
 
 // import logo from './logo.svg';
