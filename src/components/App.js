@@ -3,7 +3,11 @@ import AppRouter from "./AppRouter";
 
 function App() {
   const [init, setInit] = useState(true);
-  return <>{init ? <AppRouter /> : "Initializing.."}</>;
+  // return <>{init ? <AppRouter /> : "Initializing.."}</>;
+
+  if (init) return <AppRouter />;
+
+  return "Init";
 }
 
 export default App;
